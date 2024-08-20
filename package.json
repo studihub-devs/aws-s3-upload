@@ -1,0 +1,35 @@
+{
+  "name": "studihub-s3-service",
+  "version": "1.0.0",
+  "description": "## There are two upload mode Add the accelerateMode attribute true or false to the request queries  > Normal Mode: S3 normal transfer > Acceleration Mode: Fast transfer service of AWS. The upload speed increase from 50% to 500% but the additional fees is required (0.08$/GB)",
+  "main": "server111.js",
+  "scripts": {
+    "start": "npm run serve",
+    "build": "npm run build-ts",
+    "serve": "node dist/server.js",    
+    "build-ts": "tsc"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-s3": "^3.627.0",
+    "@aws-sdk/s3-request-presigner": "^3.627.0",
+    "@types/express": "^4.17.21",
+    "@types/express-serve-static-core": "^4.19.5",
+    "@types/multer": "^1.4.11",
+    "@types/node": "^22.2.0",
+    "@types/uuid": "^10.0.0",
+    "aws-sdk": "^2.1672.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2",
+    "multer": "^1.4.5-lts.1",
+    "multer-s3": "^3.0.1",
+    "await-to-js": "^3.0.0",
+    "inversify": "^6.0.2",
+    "reflect-metadata": "^0.2.2",
+    "sharp": "^0.33.4",
+    "typescript": "^5.5.4",
+    "uuid": "^10.0.0"
+  }
+}

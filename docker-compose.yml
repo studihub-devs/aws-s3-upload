@@ -1,0 +1,15 @@
+version: '3.6'
+networks:
+  studihub_srv:
+    name: studihub_srv
+services:
+  api-upload:
+    image: studihub/api-upload:0.0.3
+    restart: always
+    networks:
+      - studihub_srv
+    ports:
+      - '5050:5000'     
+    env_file:
+      - .env
+   
